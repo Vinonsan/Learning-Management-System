@@ -1,9 +1,14 @@
-import React from 'react'
 
-function layout() {
+import React from "react";
+
+export default function SiteLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   return (
-    <div>layout</div>
-  )
+    <>
+      <main>{children}</main>
+    </>
+  );
 }
-
-export default layout

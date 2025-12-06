@@ -1,8 +1,8 @@
-const page =() => {
+import React from 'react'
+
+function page() {
   return (
-    <div>
-      Hello world
-    </div>
+    <div>page</div>
   )
 }
 
