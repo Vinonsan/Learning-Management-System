@@ -1,4 +1,5 @@
-
+import Footer from "@/src/components/layouts/Footer";
+import Nav from "@/src/components/layouts/Nav";
 import React from "react";
 
 export default function SiteLayout({
@@ -8,7 +9,13 @@ export default function SiteLayout({
 }) {
   return (
     <>
-      <main>{children}</main>
+      <main>
+        <Nav />
+        <div className="pt-24">
+        {children}
+        </div>
+        <Footer />
+      </main>
     </>
   );
 }
