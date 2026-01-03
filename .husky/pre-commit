@@ -7,4 +7,4 @@ pnpm lint || exit 1
 echo "🏗️ Checking build..."
 pnpm build || exit 1
 
-echo "✅ Everything OK. Proceeding with commit."
+echo "✅ Pre-commit checks passed."

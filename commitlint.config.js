@@ -6,6 +6,11 @@ module.exports = {
       'always',
       ['feat', 'fix', 'docs', 'chore', 'style', 'refactor', 'perf', 'test']
     ],
-    'subject-case': [2, 'never', ['start-case', 'pascal-case']] // disallow capitalized subjects
+    'subject-case': [
+      2,
+      'never',
+      ['start-case', 'pascal-case', 'upper-case']
+    ],
+    'subject-empty': [2, 'never']
   }
 };
