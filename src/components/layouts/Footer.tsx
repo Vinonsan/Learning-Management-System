@@ -1,6 +1,4 @@
 "use client";
-
-import React from "react";
 import Link from "next/link";
 import {
   Facebook,
@@ -11,7 +9,6 @@ import {
   Mail,
   Phone,
   MapPin,
-  Clock,
 } from "lucide-react";
 
 const quickLinks = [
@@ -46,21 +43,17 @@ const socialLinks = [
 const contactItems = [
   {
     icon: Mail,
-    value: "info@masterbrain.lk",
-    href: "mailto:info@masterbrain.lk",
+    value: "support@masterbrain.site",
+    href: "mailto:support@masterbrain.site",
   },
   {
     icon: Phone,
-    value: "+94 11 234 5678",
-    href: "tel:+94112345678",
+    value: "+94 075 831 1995",
+    href: "tel:+940758311995",
   },
   {
     icon: MapPin,
-    value: "Colombo, Sri Lanka",
-  },
-  {
-    icon: Clock,
-    value: "Mon – Sat : 9:00 AM – 6:00 PM",
+    value: "point pedro road,kankesanthurai",
   },
 ];
 
@@ -72,7 +65,7 @@ export default function Footer() {
 
       <div className="absolute inset-0 opacity-5 bg-[radial-gradient(circle_at_2px_2px,white_1px,transparent_0)] bg-[length:40px_40px]" />
 
-      <div className="relativew-full mx-auto px-6 py-20">
+      <div className="relative w-full mx-auto p-10">
 
         <div className="flex flex-col lg:flex-row gap-12 mb-16">
 
@@ -95,7 +88,7 @@ export default function Footer() {
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label={label}
-                  className="w-11 h-11 rounded-xl border border-gray-800 bg-gray-900 flex items-center justify-center text-gray-400 transition hover:bg-primary hover:border-primary hover:text-white"
+                  className="w-11 h-11 rounded-full border border-white/20 bg-primary/10 flex items-center justify-center text-white transition hover:bg-primary cursor-pointer"
                 >
                   <Icon size={18} />
                 </a>

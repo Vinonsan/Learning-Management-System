@@ -8,7 +8,7 @@ import CTASection from '@/src/components/layouts/PrimaryCTA'
 
 const page = () => {
   return (
-    <div className="px-8 py-6">
+    <div className="px-8 py-1">
       <Hero />
       <PopularCourses />
       <WhyChooseUs />
@@ -16,13 +16,13 @@ const page = () => {
       <Testimonial />
       <Frequentlyaskedquestion />
       <CTASection
-        title="Ready to Dive Deeper?"
-        description="Enter the study materials section to explore advanced concepts and hands-on references."
+        title="Access Premium Learning Resources"
+        description="Master Node.js, React, and Flutter or excel in your A-Levels with our curated study materials, past papers, and project guides."
         primaryCta={{
-          label: "Explore Materials",
+          label: "View Course Materials",
           href: "/courses",
         }}
-        trustText="Trusted by 10,000+ learners · Career-focused · Learn at your pace"
+        trustText="Exam-focused prep · Industry-standard coding practices · 100% Practical"
       />
     </div>
   )

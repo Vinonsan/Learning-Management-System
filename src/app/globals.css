@@ -67,3 +67,26 @@ body {
   width: 32px;
   border-radius: 999px;
 }
+
+@layer utilities {
+  .shadow-card {
+    box-shadow: 0 20px 40px -15px rgba(0, 0, 0, 0.15);
+  }
+
+  .shadow-card-hover:hover {
+    box-shadow: 0 30px 60px -15px rgba(0, 0, 0, 0.25);
+  }
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0) translateX(0);
+  }
+  50% {
+    transform: translateY(-12px) translateX(-6px);
+  }
+}
+
+.animate-float {
+  animation: float 4s ease-in-out infinite;
+}

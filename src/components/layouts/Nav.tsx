@@ -1,7 +1,8 @@
 "use client";
 
-import React, { useState } from "react";
+import  { useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { Menu, X } from "lucide-react";
 import Button from "@/src/components/base/Button";
@@ -23,10 +24,10 @@ const Nav = () => {
 
   return (
     <header className="fixed top-0 z-50 w-full">
-      <nav className="flex w-full items-center justify-between px-12 py-4 backdrop-blur-md border-b border-black/5 bg-white/80">
+      <nav className="flex w-full items-center justify-between px-8 py-2 backdrop-blur-md border-b border-black/5 bg-white/80">
  
         <Link href="/" className="text-xl font-bold">
-          Master<span className="text-primary">Brain</span>
+          <Image src="/logo.png" alt="MasterBrain Logo" width={120} height={32} />
         </Link>
 
   
@@ -49,17 +50,19 @@ const Nav = () => {
 
         <div className="hidden md:block">
           <Button variant="primary" className="rounded-full px-6">
-            Get Started
+             Register Now
           </Button>
         </div>
 
-        <button
+        <Button
+        size="xs"
+        variant="transparent"
           onClick={() => setOpen(true)}
           className="md:hidden"
           aria-label="Open menu"
         >
           <Menu className="h-6 w-6" />
-        </button>
+        </Button>
       </nav>
 
       {open && (
@@ -73,9 +76,9 @@ const Nav = () => {
               >
                 Master<span className="text-primary">Brain</span>
               </Link>
-              <button onClick={() => setOpen(false)}>
+              <Button onClick={() => setOpen(false)} size="xs" variant="rounded">
                 <X className="h-6 w-6 text-white" />
-              </button>
+              </Button>
             </div>
 
             <ul className="flex flex-col gap-6 text-base font-medium text-white">
@@ -98,7 +101,7 @@ const Nav = () => {
 
             <div className="mt-10">
               <Button variant="primary" className="w-full rounded-full">
-                Get Started
+                Register Now
               </Button>
             </div>
           </div>

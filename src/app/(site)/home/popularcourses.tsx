@@ -48,31 +48,49 @@ const courses = [
     monthlyFee: "3000",
     image: "https://images.unsplash.com/photo-1559028012-481c04fa702d",
   },
+
+  {
+    title: "A/L ICT – Information & Communication Technology",
+    description:
+      "This course is designed according to the A/L ICT syllabus, covering fundamental concepts such as computer hardware, software, networking, data representation, databases, and basic programming. Students will develop strong conceptual knowledge as well as problem-solving skills required for examinations, while also gaining practical exposure to real-world ICT applications.",
+    duration: "6",
+    monthlyFee: "3000",
+    image: "https://images.unsplash.com/photo-1559028012-481c04fa702d",
+  },
+
+  {
+    title: "A/L ICT – Information & Communication Technology",
+    description:
+      "This course is designed according to the A/L ICT syllabus, covering fundamental concepts such as computer hardware, software, networking, data representation, databases, and basic programming. Students will develop strong conceptual knowledge as well as problem-solving skills required for examinations, while also gaining practical exposure to real-world ICT applications.",
+    duration: "6",
+    monthlyFee: "3000",
+    image: "https://images.unsplash.com/photo-1559028012-481c04fa702d",
+  },
 ];
 
 
 function PopularCourses() {
   return (
-    <section>
-   
-<SectionHeading
-  title="Our Courses"
-  subtitle="Choose the right path to build your future"
-  align="center"
-/>
+    <section className="py-20">
+
+      <SectionHeading
+        title="Explore Our Courses"
+        subtitle="Browse our selection of expert-led IT subjects designed for both school students and aspiring developers."
+        align="center"
+      />
 
       <div className="grid gap-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4">
-        {courses.map((course, index) => (
+        {courses.slice(0, 6).map((course, index) => (
           <div
             key={index}
-            className="group bg-white rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden hover:-translate-y-1"
+            className="group rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden hover:-translate-y-1"
           >
             <div className="relative h-44">
               <div
                 className="absolute inset-0 bg-cover bg-center"
                 style={{ backgroundImage: `url(${course.image})` }}
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent" />
+              <div className="absolute inset-0 bg-linear-to-t from-black/60 via-black/20 to-transparent" />
 
               <Badge
                 variant="secondary"
@@ -100,7 +118,7 @@ function PopularCourses() {
                   </span>
                 </span>
 
-                <Button variant="primary" size="sm" className="rounded-lg">
+                <Button variant="primary" size="sm" className="rounded-full">
                   Enroll Now
                 </Button>
               </div>
@@ -108,6 +126,13 @@ function PopularCourses() {
           </div>
         ))}
       </div>
+      {courses.length > 6 && (
+        <div className="flex justify-center mt-12">
+          <Button variant="primary" size="lg" className="rounded-full">
+            View All Courses
+          </Button>
+        </div>
+      )}
     </section>
   );
 }

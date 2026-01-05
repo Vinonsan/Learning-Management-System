@@ -54,7 +54,7 @@ const testimonials: Testimonial[] = [
     comment:
       "Well-structured curriculum with industry-relevant projects. Highly recommended!",
   },
-   {
+  {
     id: 4,
     name: "Suresh Menon",
     role: "Node.js Developer",
@@ -69,7 +69,7 @@ const testimonials: Testimonial[] = [
 
 const Testimonial = () => {
   return (
-    <section className="relative py-24 bg-white">
+    <section className="relative py-24">
       <div className="container mx-auto px-4">
 
         <SectionHeading
@@ -87,7 +87,7 @@ const Testimonial = () => {
             centeredSlides
             grabCursor
             loop
-            
+            autoplay={{ delay: 4000, disableOnInteraction: false }}
             pagination={{ clickable: true }}
             coverflowEffect={{
               rotate: 25,
@@ -108,13 +108,10 @@ const Testimonial = () => {
                   className="
                     relative rounded-3xl bg-white p-8
                     border border-gray-100
-                    shadow-[0_20px_40px_-15px_rgba(0,0,0,0.15)]
-                    transition-all duration-300
-                    hover:-translate-y-2
-                    hover:shadow-[0_30px_60px_-15px_rgba(0,0,0,0.25)]
+                    shadow-card shadow-card-hover transition-all duration-300 hover:-translate-y-2
                   "
                 >
-       
+
                   <div className="absolute top-0 -left-4 w-8 h-8 rounded-2xl bg-primary flex items-center justify-center shadow-xl">
                     <Quote size={16} className="text-white" />
                   </div>
@@ -129,7 +126,7 @@ const Testimonial = () => {
                     ))}
                   </div>
 
-   
+
                   <p className="text-sm text-gray-700 leading-relaxed mb-6 min-h-24">
                     “{item.comment}”
                   </p>

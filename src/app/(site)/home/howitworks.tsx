@@ -23,65 +23,63 @@ type Step = {
 const steps: Step[] = [
   {
     step: "01",
-    title: "Explore Courses",
-    description: "Browse and select courses that match your career goals and interests",
+    title: "Find Your Path",
+    description: "Explore expert-led A-Level subjects or master Full-Stack development with Node.js, React, and Flutter.",
     icon: Search,
     angle: 0,
   },
   {
     step: "02",
-    title: "Create Account",
-    description: "Sign up with your email to get started on your learning journey",
+    title: "Instant Registration",
+    description: "Create your student account in seconds to access our integrated learning dashboard and schedules.",
     icon: UserPlus,
     angle: 60,
   },
   {
     step: "03",
-    title: "Enroll & Pay",
-    description: "Complete secure payment to enroll in your chosen courses",
+    title: "Secure Enrollment",
+    description: "Unlock premium course content and live sessions through our safe and encrypted payment gateway.",
     icon: CreditCard,
     angle: 120,
   },
   {
     step: "04",
-    title: "Start Learning",
-    description: "Access live sessions and course materials instantly after enrollment",
+    title: "Live Interactive Classes",
+    description: "Join real-time sessions with industry experts and experienced A-Level tutors from anywhere.",
     icon: PlayCircle,
     angle: 180,
   },
   {
     step: "05",
-    title: "Build Projects",
-    description: "Apply your knowledge through hands-on projects and real-world exercises",
+    title: "Real-World Practice",
+    description: "Build a professional project portfolio or solve A-Level past paper series with hands-on guidance.",
     icon: Code2,
     angle: 240,
   },
   {
     step: "06",
-    title: "Get Certified",
-    description: "Earn industry-recognized certificates upon course completion",
+    title: "Achieve Success",
+    description: "Graduate with a job-ready developer portfolio or the confidence to ace your official A-Level exams.",
     icon: Award,
     angle: 300,
   },
 ];
 
 
-
 const HowItWorks = () => {
   const radius = 360;
 
   return (
-    <section className="relative ">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+    <section className="relative py-8">
+      <div className="container ">
 
         <SectionHeading
-          title="How It Works"
-          subtitle="Your journey from exploration to certification in six simple steps"
+          title="Your Learning Journey"
+          subtitle="Master high-demand skills and ace your exams with our proven process"
           align="center"
-          variant="gradient"
         />
 
-        <div className="relative min-h-[900px] flex items-center justify-center ">
+        <div className="relative h-100 md:h-200 flex items-center justify-center ">
 
           <div className="relative w-64 h-64 z-10 flex items-center justify-center">
 
@@ -126,7 +124,7 @@ const HowItWorks = () => {
 
 
                   <div className="flex items-center gap-4 mb-4">
-                 
+
                     <div className="w-10 h-10 rounded-lg bg-primary text-white flex items-center justify-center shadow-md">
                       <Icon size={20} />
                     </div>
@@ -139,7 +137,7 @@ const HowItWorks = () => {
                     {item.description}
                   </p>
 
-             
+
                   <div className="pointer-events-none absolute inset-0 rounded-2xl bg-primary opacity-0 group-hover:opacity-5 transition-opacity" />
                 </div>
               </div>

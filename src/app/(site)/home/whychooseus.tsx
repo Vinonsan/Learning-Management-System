@@ -1,43 +1,42 @@
-import React from "react";
 import { Globe, Code2, Users, Briefcase, Layers, CalendarClock } from "lucide-react";
 import SectionHeading from "@/src/components/layouts/SectionHeading";
 
 
 const features = [
   {
-    title: "Tamil Medium Learning",
+    title: "Expert Tamil Medium Instruction",
     description:
-      "Complex technical concepts are explained clearly in Tamil, helping learners understand faster without language barriers.",
+      "Master complex coding and ICT concepts in your native language. We eliminate the language barrier, making advanced software engineering accessible to everyone.",
     icon: Globe,
   },
   {
-    title: "Real-World Projects",
+    title: "A/L ICT to Industry Pipeline",
     description:
-      "Hands-on projects designed around real industry problems to build practical skills and confidence.",
+      "Our curriculum doesn't just stop at school exams. We transition students from the A/L syllabus directly into professional stacks like React, Next.js, and .NET.",
+    icon: Layers,
+  },
+  {
+    title: "Project-Based Learning",
+    description:
+      "Stop just watching tutorials. Build production-ready applications through hands-on labs that simulate real-world software company environments.",
     icon: Code2,
   },
   {
-    title: "Industry Mentors",
+    title: "Mentorship from IT Pros",
     description:
-      "Learn directly from experienced professionals who actively work in the tech industry.",
+      "Learn from Senior Software Engineers who bring industry standards into the classroom, teaching you clean code, architecture, and professional ethics.",
     icon: Users,
   },
   {
-    title: "Career Support",
+    title: "Career & Interview Coaching",
     description:
-      "Comprehensive career guidance including CV preparation, interview training, and placement support.",
+      "Get job-ready with specialized support for IT CV writing, GitHub portfolio building, and technical interview preparation for global tech roles.",
     icon: Briefcase,
   },
   {
-    title: "Structured Learning Path",
+    title: "Flexible Learning Paths",
     description:
-      "Well-organized course structure that takes learners step by step from fundamentals to advanced concepts.",
-    icon: Layers
-  },
-  {
-    title: "Flexible Learning Schedule",
-    description:
-      "Flexible class timings and learning pace designed to suit students, job seekers, and working professionals.",
+      "Whether you are a full-time school student or a working professional, our weekend and evening schedules ensure you never miss a lesson.",
     icon: CalendarClock, 
   },
 ];
@@ -47,8 +46,8 @@ function WhyChooseUs() {
     return (
         <section className="py-16">
             <SectionHeading
-                title="Why Choose Us"
-                subtitle="We focus on practical learning, clarity, and career growth — not just theory."
+                title="Expert IT Training in Tamil"
+                subtitle="Bridge the gap between your A/L syllabus and a tech career. Master high-demand skills like React and .NET with our industry-aligned curriculum."
                 align="center"
             />
 
