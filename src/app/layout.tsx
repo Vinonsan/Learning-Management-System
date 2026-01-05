@@ -15,12 +15,22 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://www.masterbrain.lk"),
+  metadataBase: new URL("https://masterbrain.site"),
 
   title: {
     default: "MasterBrain | Advanced IT & Communication Courses in Tamil",
     template: "%s | MasterBrain",
   },
+
+  icons: {
+    icon: [
+      { url: '/favicon-16x16.png', sizes: '16x16', type: 'image/png' },
+      { url: '/favicon-32x32.png', sizes: '32x32', type: 'image/png' },
+    ],
+    apple: '/apple-touch-icon.png',
+  },
+
+  manifest: '/site.webmanifest',
 
   description:
     "MasterBrain provides advanced-level Information Technology and communication education in Sri Lanka through Tamil medium. Learn React JS, JavaScript, Next.js, Node.js, and .NET with industry-focused training.",
@@ -37,7 +47,7 @@ export const metadata: Metadata = {
     "Software engineering Tamil medium",
   ],
 
-  authors: [{ name: "MasterBrain Academy", url: "https://www.masterbrain.lk" }],
+  authors: [{ name: "MasterBrain Academy", url: "https://www.masterbrain.site" }],
   creator: "MasterBrain Academy",
   publisher: "MasterBrain Academy",
 
@@ -45,7 +55,7 @@ export const metadata: Metadata = {
     title: "MasterBrain | Advanced IT Education in Tamil",
     description:
       "Learn advanced Information Technology and communication skills in Sri Lanka through Tamil medium. Courses include React JS, JavaScript, Next.js, Node.js, and .NET.",
-    url: "https://www.masterbrain.lk",
+    url: "https://www.masterbrain.site",
     siteName: "MasterBrain",
     locale: "en_LK",
     type: "website",
@@ -71,7 +81,7 @@ export const metadata: Metadata = {
   },
 
   alternates: {
-    canonical: "https://www.masterbrain.lk",
+    canonical: "https://www.masterbrain.site",
   },
 };
 

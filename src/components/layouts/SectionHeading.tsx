@@ -1,4 +1,3 @@
-import React from "react";
 
 interface SectionHeadingProps {
   title: string;
@@ -26,7 +25,7 @@ function SectionHeading({
       <h2
         className={`text-3xl md:text-4xl font-extrabold tracking-tight ${
           variant === "gradient"
-            ? "bg-gradient-to-r from-primary via-black to-red-900 bg-clip-text text-transparent"
+            ? "bg-linear-to-r from-primary via-black to-red-900 bg-clip-text text-transparent"
             : "text-gray-900"
         }`}
       >

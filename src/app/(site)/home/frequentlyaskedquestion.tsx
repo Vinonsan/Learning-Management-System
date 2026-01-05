@@ -49,19 +49,18 @@ export default function Frequentlyaskedquestion() {
 
   return (
     <section className="relative overflow-hidden py-24">
-      <div className="container mx-auto px-4">
+      <div className="container mx-auto">
         <SectionHeading
           title="Frequently Asked Questions"
           subtitle="Find answers to common questions about our courses and learning experience"
           align="center"
-          variant="gradient"
         />
 
         <div className="mt-20 grid grid-cols-1 lg:grid-cols-3 gap-12 items-start">
           <div className="relative lg:col-span-1 flex flex-col items-center lg:items-start gap-6">
             <div className="relative w-full max-w-sm aspect-square rounded-3xl overflow-hidden shadow-xl">
               <Image
-                src="/images/hero2.png"
+                src="/images/faq.png"
                 alt="Learning Support"
                 fill
                 className="object-cover"
@@ -71,11 +70,6 @@ export default function Frequentlyaskedquestion() {
                 Student Support
               </div>
             </div>
-
-            <p className="text-dark/70 text-center lg:text-left max-w-sm">
-              Get clarity on courses, learning format, certifications, and
-              career guidance before you enroll.
-            </p>
           </div>
 
           <div className="lg:col-span-2 space-y-4">
