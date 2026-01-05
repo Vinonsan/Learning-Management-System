@@ -1,9 +1,21 @@
-import React from 'react'
+import Footer from "@/src/components/layouts/Footer";
+import Nav from "@/src/components/layouts/Nav";
+import React from "react";
 
-function layout() {
+export default function SiteLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   return (
-    <div>layout</div>
-  )
+    <>
+      <main>
+        <Nav />
+        <div className="pt-24">
+        {children}
+        </div>
+        <Footer />
+      </main>
+    </>
+  );
 }
-
-export default layout
