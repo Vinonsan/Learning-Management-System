@@ -3,14 +3,28 @@
 import { useState } from "react";
 import { Send } from "lucide-react";
 
-export default function ContactForm() {
+import SectionHeading from "@/src/components/layouts/SectionHeading";
+import Button from "@/src/components/base/Button";
+import Input from "@/src/components/base/Input";
+import Select from "@/src/components/base/Select";
+import Textarea from "@/src/components/base/TextArea";
+
+import { COURSE_OPTIONS } from "../_utils/components/constants/courseOptions";
+
+const ContactForm = () => {
   const [loading, setLoading] = useState(false);
+  const [form, setForm] = useState({
+    fullName: "",
+    email: "",
+    phone: "",
+    course: "",
+    message: "",
+  });
 
   function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
     setLoading(true);
 
-    // Simulate API call
     setTimeout(() => {
       setLoading(false);
       alert("Message sent successfully!");
@@ -18,110 +32,84 @@ export default function ContactForm() {
   }
 
   return (
-    <section className="py-24 bg-white">
-      <div className="max-w-5xl mx-auto px-6">
-        {/* Heading */}
-        <div className="text-center mb-14">
-          <span className="inline-flex items-center gap-2 px-4 py-1 mb-4 rounded-full bg-primary/10 text-xs tracking-widest text-primary">
-            SEND A MESSAGE
-          </span>
+    <section className="py-8">
+      <SectionHeading
+        title="Send a message"
+        subtitle="Fill out the form below and our team will get back to you shortly. We’re happy to guide you in choosing the right course."
+        align="center"
+      />
 
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-3">
-            Let’s Talk About Your <span className="text-primary">Future</span>
-          </h2>
+      <div className="bg-gray-50 border border-gray-200 rounded-3xl p-8 md:p-10 shadow-sm max-w-3xl mx-auto">
+        <form onSubmit={handleSubmit} className="grid grid-cols-1 gap-6">
+          <Input
+            id="fullName"
+            label="Full Name"
+            type="text"
+            value={form.fullName}
+            placeholder="Your name"
+            required
+            onChange={(value) =>
+              setForm((prev) => ({ ...prev, fullName: String(value) }))
+            }
+          />
 
-          <p className="text-gray-600 max-w-xl mx-auto">
-            Fill out the form below and our team will get back to you shortly.
-            We’re happy to guide you in choosing the right course.
-          </p>
-        </div>
+          <Input
+            id="email"
+            label="Email Address"
+            type="email"
+            value={form.email}
+            placeholder="you@example.com"
+            required
+            onChange={(value) =>
+              setForm((prev) => ({ ...prev, email: String(value) }))
+            }
+          />
 
-        {/* Form Card */}
-        <div className="bg-gray-50 border border-gray-200 rounded-3xl p-8 md:p-10 shadow-sm">
-          <form onSubmit={handleSubmit} className="grid grid-cols-1 gap-6">
-            {/* Name */}
-            <div>
-              <label className="block text-sm font-medium text-gray-700 mb-2">
-                Full Name
-              </label>
-              <input
-                type="text"
-                required
-                placeholder="Your name"
-                className="w-full rounded-xl border border-gray-300 px-4 py-3 text-gray-900 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-primary/40 focus:border-primary"
-              />
-            </div>
+          <Input
+            id="phone"
+            label="Phone / WhatsApp"
+            type="text"
+            value={form.phone}
+            placeholder="+94 7X XXX XXXX"
+            onChange={(value) =>
+              setForm((prev) => ({ ...prev, phone: String(value) }))
+            }
+          />
 
-            {/* Email */}
-            <div>
-              <label className="block text-sm font-medium text-gray-700 mb-2">
-                Email Address
-              </label>
-              <input
-                type="email"
-                required
-                placeholder="you@example.com"
-                className="w-full rounded-xl border border-gray-300 px-4 py-3 text-gray-900 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-primary/40 focus:border-primary"
-              />
-            </div>
+          <Select
+            label="Interested Course"
+            labelKey="label"
+            valueKey="value"
+            value={form.course}
+            options={[
+              { label: "Select a course", value: "", disabled: true },
+              ...COURSE_OPTIONS,
+            ]}
+            onChange={(value) =>
+              setForm((prev) => ({ ...prev, course: value as string }))
+            }
+          />
 
-            {/* Phone */}
-            <div>
-              <label className="block text-sm font-medium text-gray-700 mb-2">
-                Phone / WhatsApp
-              </label>
-              <input
-                type="tel"
-                placeholder="+94 7X XXX XXXX"
-                className="w-full rounded-xl border border-gray-300 px-4 py-3 text-gray-900 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-primary/40 focus:border-primary"
-              />
-            </div>
+          <Textarea
+            label="Message"
+            value={form.message}
+            rows={5}
+            placeholder="Tell us about your goals or questions..."
+            onChange={(value) =>
+              setForm((prev) => ({ ...prev, message: String(value) }))
+            }
+          />
 
-            {/* Course Interest */}
-            <div>
-              <label className="block text-sm font-medium text-gray-700 mb-2">
-                Interested Course
-              </label>
-              <select
-                className="w-full rounded-xl border border-gray-300 px-4 py-3 text-gray-900 focus:outline-none focus:ring-2 focus:ring-primary/40 focus:border-primary"
-                defaultValue=""
-              >
-                <option value="" disabled>
-                  Select a course
-                </option>
-                <option>React JS</option>
-                <option>Next.js</option>
-                <option>JavaScript</option>
-                <option>Node.js</option>
-                <option>.NET</option>
-                <option>Other</option>
-              </select>
-            </div>
-
-            {/* Message */}
-            <div>
-              <label className="block text-sm font-medium text-gray-700 mb-2">
-                Message
-              </label>
-              <textarea
-                rows={5}
-                placeholder="Tell us about your goals or questions..."
-                className="w-full rounded-xl border border-gray-300 px-4 py-3 text-gray-900 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-primary/40 focus:border-primary resize-none"
-              />
-            </div>
-
-            {/* Submit */}
-            <button
-              type="submit"
-              disabled={loading}
-              className="inline-flex items-center justify-center gap-2 rounded-full bg-primary px-8 py-4 text-white font-semibold transition hover:opacity-90 disabled:opacity-60"
-            >
+          <div className="text-center">
+            <Button type="submit" variant="rounded" size="lg" disabled={loading}>
               {loading ? "Sending..." : "Send Message"}
               <Send className="w-5 h-5" />
-            </button>
-          </form>
-        </div>
+            </Button>
+          </div>
+        </form>
       </div>
     </section>
   );
 }
+
+export default ContactForm
