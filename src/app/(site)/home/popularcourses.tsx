@@ -102,9 +102,9 @@ function PopularCourses() {
             </div>
 
             <div className="flex flex-col gap-3 p-4">
-              <h3 className="text-lg font-semibold text-black group-hover:text-primary transition">
+              <h2 className="text-lg font-semibold text-black group-hover:text-primary transition">
                 {course.title}
-              </h3>
+              </h2>
 
               <p className="text-sm text-black/70 line-clamp-2">
                 {course.description}

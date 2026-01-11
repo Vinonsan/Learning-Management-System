@@ -33,11 +33,10 @@ const legal = [
 ];
 
 const socialLinks = [
-  { icon: Facebook, href: "https://facebook.com", label: "Facebook" },
-  { icon: Instagram, href: "https://instagram.com", label: "Instagram" },
-  { icon: Twitter, href: "https://twitter.com", label: "Twitter" },
-  { icon: Youtube, href: "https://youtube.com", label: "YouTube" },
-  { icon: Linkedin, href: "https://linkedin.com", label: "LinkedIn" },
+  { icon: Facebook, href: "https://www.facebook.com/profile.php?id=100084987801287", label: "Facebook" },
+  { icon: Instagram, href: "https://www.instagram.com/master.brain9920/", label: "Instagram" },
+  { icon: Youtube, href: "https://www.youtube.com/@masterbrain5989", label: "YouTube" },
+  { icon: Linkedin, href: "https://www.linkedin.com/in/master-brain-6b4667336/", label: "LinkedIn" },
 ];
 
 const contactItems = [

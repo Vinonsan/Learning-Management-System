@@ -1,72 +1,77 @@
 import type { Metadata } from "next";
 import Contactinformation from "./_utils/contactinformation";
 import ContactForm from "./_utils/contactform";
+import ContactMap from "./_utils/ContactMap";
+
+const SITE_URL = "https://masterbrain.site";
 
 export const metadata: Metadata = {
-  title: "About Us | Riverside Automotive",
+  title: "Contact Us | MasterBrain",
   description:
-    "Riverside Automotive provides car sales, rentals, and advisory services in the UK. Learn about our history, values, and the team behind the work.",
-  alternates: { canonical: "/about" },
+    "Contact MasterBrain for ICT coaching, exam guidance, and professional IT courses. Get expert advice from our mentors and start your learning journey today.",
+  alternates: {
+    canonical: `${SITE_URL}/contact`,
+  },
   openGraph: {
-    title: "About Riverside Automotive",
+    title: "Contact MasterBrain – Get Expert Guidance",
     description:
-      "Car sales, rentals, and advisory services in the UK. Learn about our history, values, and the team behind the work.",
-    url: "/about",
-    siteName: "Riverside Automotive",
+      "Have questions about ICT A/L classes or professional IT courses? Contact MasterBrain for fast support and personalized guidance.",
+    url: `${SITE_URL}/contact`,
+    siteName: "MasterBrain",
     images: [
       {
-        url: "/images/logo.png",
+        url: `${SITE_URL}/images/logo.png`,
         width: 1200,
         height: 630,
-        alt: "Riverside Automotive",
+        alt: "MasterBrain",
       },
     ],
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "About Riverside Automotive",
+    title: "Contact MasterBrain",
     description:
-      "Car sales, rentals, and advisory services in the UK. Learn about our history, values, and the team behind the work.",
-    images: ["/images/logo.png"],
+      "Reach out to MasterBrain for ICT coaching, career guidance, and professional IT training.",
+    images: [`${SITE_URL}/images/logo.png`],
   },
 };
 
-async function getAboutData() {
-  return {
-    org: {
-      name: "Riverside Automotive",
-      url: "https://example.com",
-      logo: "/assets/images/logo.svg",
-      foundingDate: "2012",
-      telephone: "+44 20 7946 0123",
-      address: {
-        streetAddress: "221B Baker Street",
-        addressLocality: "London",
-        postalCode: "NW1 6XE",
-        addressCountry: "UK",
-      },
-    },
-  };
-}
-
-export default async function Page() {
-  const { org } = await getAboutData();
-
+export default function Page() {
   const orgJsonLd = {
     "@context": "https://schema.org",
-    "@type": "Organization",
-    name: org.name,
-    url: org.url,
-    logo: org.logo,
-    telephone: org.telephone,
-    foundingDate: org.foundingDate,
+    "@type": "EducationalOrganization",
+    name: "MasterBrain",
+    url: SITE_URL,
+    logo: `${SITE_URL}/images/logo.png`,
+    description:
+      "Specialized ICT coaching for A/L students and professional development courses for next-gen engineers.",
+    contactPoint: {
+      "@type": "ContactPoint",
+      telephone: "+94 75 831 1995",
+      contactType: "customer support",
+      email: "support@masterbrain.site",
+      areaServed: "LK",
+      availableLanguage: ["English", "Tamil"],
+    },
     address: {
       "@type": "PostalAddress",
-      streetAddress: org.address.streetAddress,
-      addressLocality: org.address.addressLocality,
-      postalCode: org.address.postalCode,
-      addressCountry: org.address.addressCountry,
+      streetAddress: "Point Pedro Road, Kankesanthurai",
+      addressCountry: "Sri Lanka",
+    },
+  };
+
+  const contactPageJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "ContactPage",
+    name: "Contact MasterBrain",
+    url: `${SITE_URL}/contact`,
+    description:
+      "Contact page for MasterBrain – ICT education and professional IT training.",
+    mainEntity: {
+      "@type": "EducationalOrganization",
+      name: "MasterBrain",
+      url: SITE_URL,
     },
   };
 
@@ -74,12 +79,17 @@ export default async function Page() {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     itemListElement: [
-      { "@type": "ListItem", position: 1, name: "Home", item: `${org.url}/` },
+      {
+        "@type": "ListItem",
+        position: 1,
+        name: "Home",
+        item: SITE_URL,
+      },
       {
         "@type": "ListItem",
         position: 2,
-        name: "About",
-        item: `${org.url}/about`,
+        name: "Contact",
+        item: `${SITE_URL}/contact`,
       },
     ],
   };
@@ -90,12 +100,20 @@ export default async function Page() {
         type="application/ld+json"
         suppressHydrationWarning
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify([orgJsonLd, breadcrumbJsonLd]),
+          __html: JSON.stringify([
+            orgJsonLd,
+            contactPageJsonLd,
+            breadcrumbJsonLd,
+          ]),
         }}
       />
 
-     <Contactinformation />
-     <ContactForm />
+      <section className="px-8">
+        <Contactinformation />
+        <ContactForm />
+        <ContactMap />
+      </section>
+
     </main>
   );
 }

@@ -57,7 +57,7 @@ function WhyChooseUs() {
                     return (
                         <div
                             key={index}
-                            className="group relative rounded-2xl p-[1px] bg-gradient-to-br from-primary/20 via-transparent to-indigo-500/20 hover:from-primary/40 hover:to-indigo-500/40 transition-all duration-300"
+                            className="group relative rounded-2xl p-px bg-linear-to-br from-primary/20 via-transparent to-indigo-500/20 hover:from-primary/40 hover:to-indigo-500/40 transition-all duration-300"
                         >
                             <div className="relative bg-white rounded-2xl p-6 h-full shadow-md hover:shadow-2xl transition-all duration-300">
 
@@ -66,9 +66,9 @@ function WhyChooseUs() {
                                 </div>
 
                                 <div className="pt-8">
-                                    <h3 className="text-lg font-semibold text-gray-900 mb-2">
+                                    <h2 className="text-lg font-semibold text-gray-900 mb-2">
                                         {feature.title}
-                                    </h3>
+                                    </h2>
 
                                     <p className="text-sm text-gray-600 leading-relaxed">
                                         {feature.description}
