@@ -100,13 +100,13 @@ export default function Frequentlyaskedquestion() {
                         <HelpCircle size={20} />
                       </div>
 
-                      <h3
+                      <h2
                         className={`text-lg font-semibold transition-colors ${
                           isOpen ? "text-primary" : "text-dark"
                         }`}
                       >
                         {faq.question}
-                      </h3>
+                      </h2>
                     </div>
 
                     <ChevronDown

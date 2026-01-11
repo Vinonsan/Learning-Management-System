@@ -16,7 +16,6 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/client/app-dir/link.js [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$facebook$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Facebook$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/facebook.js [app-ssr] (ecmascript) <export default as Facebook>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$instagram$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Instagram$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/instagram.js [app-ssr] (ecmascript) <export default as Instagram>");
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$twitter$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Twitter$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/twitter.js [app-ssr] (ecmascript) <export default as Twitter>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$youtube$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Youtube$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/youtube.js [app-ssr] (ecmascript) <export default as Youtube>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$linkedin$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Linkedin$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/linkedin.js [app-ssr] (ecmascript) <export default as Linkedin>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$mail$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Mail$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/mail.js [app-ssr] (ecmascript) <export default as Mail>");
@@ -83,27 +82,22 @@ const legal = [
 const socialLinks = [
     {
         icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$facebook$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Facebook$3e$__["Facebook"],
-        href: "https://facebook.com",
+        href: "https://www.facebook.com/profile.php?id=100084987801287",
         label: "Facebook"
     },
     {
         icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$instagram$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Instagram$3e$__["Instagram"],
-        href: "https://instagram.com",
+        href: "https://www.instagram.com/master.brain9920/",
         label: "Instagram"
     },
     {
-        icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$twitter$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Twitter$3e$__["Twitter"],
-        href: "https://twitter.com",
-        label: "Twitter"
-    },
-    {
         icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$youtube$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Youtube$3e$__["Youtube"],
-        href: "https://youtube.com",
+        href: "https://www.youtube.com/@masterbrain5989",
         label: "YouTube"
     },
     {
         icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$linkedin$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Linkedin$3e$__["Linkedin"],
-        href: "https://linkedin.com",
+        href: "https://www.linkedin.com/in/master-brain-6b4667336/",
         label: "LinkedIn"
     }
 ];
@@ -132,7 +126,7 @@ function Footer() {
                 className: "absolute inset-0 opacity-5 bg-[radial-gradient(circle_at_2px_2px,white_1px,transparent_0)] bg-[length:40px_40px]"
             }, void 0, false, {
                 fileName: "[project]/src/components/layouts/Footer.tsx",
-                lineNumber: 66,
+                lineNumber: 65,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -153,20 +147,20 @@ function Footer() {
                                                 children: "Brain"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/layouts/Footer.tsx",
-                                                lineNumber: 74,
+                                                lineNumber: 73,
                                                 columnNumber: 21
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/components/layouts/Footer.tsx",
-                                        lineNumber: 73,
+                                        lineNumber: 72,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                         className: "h-1 w-20 rounded-full bg-primary mb-6"
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/layouts/Footer.tsx",
-                                        lineNumber: 76,
+                                        lineNumber: 75,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -174,7 +168,7 @@ function Footer() {
                                         children: "Advanced IT & Communication education in Tamil medium. Empowering learners with industry-ready skills through practical training."
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/layouts/Footer.tsx",
-                                        lineNumber: 78,
+                                        lineNumber: 77,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -189,23 +183,23 @@ function Footer() {
                                                     size: 18
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/layouts/Footer.tsx",
-                                                    lineNumber: 93,
+                                                    lineNumber: 92,
                                                     columnNumber: 19
                                                 }, this)
                                             }, label, false, {
                                                 fileName: "[project]/src/components/layouts/Footer.tsx",
-                                                lineNumber: 85,
+                                                lineNumber: 84,
                                                 columnNumber: 17
                                             }, this))
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/layouts/Footer.tsx",
-                                        lineNumber: 83,
+                                        lineNumber: 82,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/components/layouts/Footer.tsx",
-                                lineNumber: 72,
+                                lineNumber: 71,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -215,12 +209,12 @@ function Footer() {
                                     links: quickLinks
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/layouts/Footer.tsx",
-                                    lineNumber: 101,
+                                    lineNumber: 100,
                                     columnNumber: 13
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/src/components/layouts/Footer.tsx",
-                                lineNumber: 100,
+                                lineNumber: 99,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -230,12 +224,12 @@ function Footer() {
                                     links: courses
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/layouts/Footer.tsx",
-                                    lineNumber: 105,
+                                    lineNumber: 104,
                                     columnNumber: 13
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/src/components/layouts/Footer.tsx",
-                                lineNumber: 104,
+                                lineNumber: 103,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -245,7 +239,7 @@ function Footer() {
                                         title: "Contact Us"
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/layouts/Footer.tsx",
-                                        lineNumber: 109,
+                                        lineNumber: 108,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
@@ -259,12 +253,12 @@ function Footer() {
                                                             className: "w-5 h-5 text-primary"
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/layouts/Footer.tsx",
-                                                            lineNumber: 114,
+                                                            lineNumber: 113,
                                                             columnNumber: 21
                                                         }, this)
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/components/layouts/Footer.tsx",
-                                                        lineNumber: 113,
+                                                        lineNumber: 112,
                                                         columnNumber: 19
                                                     }, this),
                                                     href ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
@@ -273,37 +267,37 @@ function Footer() {
                                                         children: value
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/components/layouts/Footer.tsx",
-                                                        lineNumber: 118,
+                                                        lineNumber: 117,
                                                         columnNumber: 21
                                                     }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                         className: "text-gray-400 text-sm",
                                                         children: value
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/components/layouts/Footer.tsx",
-                                                        lineNumber: 125,
+                                                        lineNumber: 124,
                                                         columnNumber: 21
                                                     }, this)
                                                 ]
                                             }, i, true, {
                                                 fileName: "[project]/src/components/layouts/Footer.tsx",
-                                                lineNumber: 112,
+                                                lineNumber: 111,
                                                 columnNumber: 17
                                             }, this))
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/layouts/Footer.tsx",
-                                        lineNumber: 110,
+                                        lineNumber: 109,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/components/layouts/Footer.tsx",
-                                lineNumber: 108,
+                                lineNumber: 107,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/components/layouts/Footer.tsx",
-                        lineNumber: 70,
+                        lineNumber: 69,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -318,7 +312,7 @@ function Footer() {
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/components/layouts/Footer.tsx",
-                                lineNumber: 134,
+                                lineNumber: 133,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -332,36 +326,36 @@ function Footer() {
                                                 className: "absolute left-0 -bottom-1 w-0 h-0.5 bg-primary transition-all group-hover:w-full"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/layouts/Footer.tsx",
-                                                lineNumber: 146,
+                                                lineNumber: 145,
                                                 columnNumber: 17
                                             }, this)
                                         ]
                                     }, link.name, true, {
                                         fileName: "[project]/src/components/layouts/Footer.tsx",
-                                        lineNumber: 140,
+                                        lineNumber: 139,
                                         columnNumber: 15
                                     }, this))
                             }, void 0, false, {
                                 fileName: "[project]/src/components/layouts/Footer.tsx",
-                                lineNumber: 138,
+                                lineNumber: 137,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/components/layouts/Footer.tsx",
-                        lineNumber: 133,
+                        lineNumber: 132,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/components/layouts/Footer.tsx",
-                lineNumber: 68,
+                lineNumber: 67,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/components/layouts/Footer.tsx",
-        lineNumber: 64,
+        lineNumber: 63,
         columnNumber: 5
     }, this);
 }
@@ -374,20 +368,20 @@ function FooterHeading({ title }) {
                 children: title
             }, void 0, false, {
                 fileName: "[project]/src/components/layouts/Footer.tsx",
-                lineNumber: 160,
+                lineNumber: 159,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 className: "h-1 w-12 rounded-full bg-primary"
             }, void 0, false, {
                 fileName: "[project]/src/components/layouts/Footer.tsx",
-                lineNumber: 163,
+                lineNumber: 162,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/components/layouts/Footer.tsx",
-        lineNumber: 159,
+        lineNumber: 158,
         columnNumber: 5
     }, this);
 }
@@ -398,7 +392,7 @@ function FooterLinks({ title, links }) {
                 title: title
             }, void 0, false, {
                 fileName: "[project]/src/components/layouts/Footer.tsx",
-                lineNumber: 177,
+                lineNumber: 176,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
@@ -410,23 +404,23 @@ function FooterLinks({ title, links }) {
                             children: link.name
                         }, void 0, false, {
                             fileName: "[project]/src/components/layouts/Footer.tsx",
-                            lineNumber: 181,
+                            lineNumber: 180,
                             columnNumber: 13
                         }, this)
                     }, link.name, false, {
                         fileName: "[project]/src/components/layouts/Footer.tsx",
-                        lineNumber: 180,
+                        lineNumber: 179,
                         columnNumber: 11
                     }, this))
             }, void 0, false, {
                 fileName: "[project]/src/components/layouts/Footer.tsx",
-                lineNumber: 178,
+                lineNumber: 177,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/components/layouts/Footer.tsx",
-        lineNumber: 176,
+        lineNumber: 175,
         columnNumber: 5
     }, this);
 }
@@ -472,24 +466,39 @@ const sizeClasses = {
     md: "px-6 py-3 text-base",
     lg: "px-8 py-4 text-lg"
 };
-const Button = ({ children, variant = "primary", size = "md", className = "", disabled, ...props })=>{
+const commonClasses = `
+  inline-flex items-center justify-center gap-2
+  font-semibold transition-all
+  focus:outline-none focus:ring-2 focus:ring-primary/50
+  disabled:opacity-50 disabled:cursor-not-allowed
+  cursor-pointer
+`;
+const Button = ({ children, variant = "primary", size = "md", className = "", href, ...props })=>{
+    const classes = `
+    ${commonClasses}
+    ${variantClasses[variant]}
+    ${sizeClasses[size]}
+    ${className}
+  `;
+    if (href) {
+        return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
+            href: href,
+            className: classes,
+            ...props,
+            children: children
+        }, void 0, false, {
+            fileName: "[project]/src/components/base/Button.tsx",
+            lineNumber: 73,
+            columnNumber: 7
+        }, ("TURBOPACK compile-time value", void 0));
+    }
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-        disabled: disabled,
-        className: `
-        inline-flex items-center justify-center gap-2
-        font-semibold transition-all
-        focus:outline-none focus:ring-2 focus:ring-primary/50
-        disabled:opacity-50 disabled:cursor-not-allowed
-        cursor-pointer
-        ${variantClasses[variant]}
-        ${sizeClasses[size]}
-        ${className}
-      `,
+        className: classes,
         ...props,
         children: children
     }, void 0, false, {
         fileName: "[project]/src/components/base/Button.tsx",
-        lineNumber: 42,
+        lineNumber: 80,
         columnNumber: 5
     }, ("TURBOPACK compile-time value", void 0));
 };

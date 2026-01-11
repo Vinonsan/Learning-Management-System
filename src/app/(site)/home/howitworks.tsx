@@ -130,9 +130,9 @@ const HowItWorks = () => {
                     </div>
                   </div>
 
-                  <h3 className="text-lg font-bold text-gray-900 mb-2">
+                  <h2 className="text-lg font-bold text-gray-900 mb-2">
                     {item.title}
-                  </h3>
+                  </h2>
                   <p className="text-sm text-gray-600 leading-relaxed">
                     {item.description}
                   </p>
