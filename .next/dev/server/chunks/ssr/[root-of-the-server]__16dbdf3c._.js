@@ -155,38 +155,20 @@ function Page() {
                 }
             }, void 0, false, {
                 fileName: "[project]/src/app/(site)/course/page.tsx",
-                lineNumber: 121,
+                lineNumber: 122,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
-                className: "px-8 py-12",
-                children: [
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
-                        className: "text-3xl font-bold mb-4",
-                        children: "IT & ICT Courses at MasterBrain"
-                    }, void 0, false, {
-                        fileName: "[project]/src/app/(site)/course/page.tsx",
-                        lineNumber: 134,
-                        columnNumber: 9
-                    }, this),
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                        className: "mb-8 text-gray-600",
-                        children: "MasterBrain offers ICT A/L classes, software engineering programs, and professional IT courses designed to help students and professionals succeed in the tech industry."
-                    }, void 0, false, {
-                        fileName: "[project]/src/app/(site)/course/page.tsx",
-                        lineNumber: 137,
-                        columnNumber: 9
-                    }, this)
-                ]
-            }, void 0, true, {
+                className: "px-8"
+            }, void 0, false, {
                 fileName: "[project]/src/app/(site)/course/page.tsx",
-                lineNumber: 133,
+                lineNumber: 134,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/app/(site)/course/page.tsx",
-        lineNumber: 120,
+        lineNumber: 121,
         columnNumber: 5
     }, this);
 }

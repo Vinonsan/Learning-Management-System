@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Course from "./_utils/components/Course";
 
 const SITE_URL = "https://masterbrain.site";
 
@@ -130,17 +131,8 @@ export default function Page() {
         }}
       />
 
-      <section className="px-8 py-12">
-        <h1 className="text-3xl font-bold mb-4">
-          IT & ICT Courses at MasterBrain
-        </h1>
-        <p className="mb-8 text-gray-600">
-          MasterBrain offers ICT A/L classes, software engineering programs, and
-          professional IT courses designed to help students and professionals
-          succeed in the tech industry.
-        </p>
-
-
+      <section className="px-8">
+<Course />
       </section>
     </main>
   );

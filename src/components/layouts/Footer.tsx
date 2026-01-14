@@ -61,7 +61,7 @@ export default function Footer() {
   return (
     <footer className="relative bg-black text-gray-300 overflow-hidden">
 
-      <div className="absolute inset-0 opacity-5 bg-[radial-gradient(circle_at_2px_2px,white_1px,transparent_0)] bg-[length:40px_40px]" />
+      <div className="absolute inset-0 opacity-5 bg-[radial-gradient(circle_at_2px_2px,white_1px,transparent_0)] w-16" />
 
       <div className="relative w-full mx-auto p-10">
 
