@@ -3,7 +3,6 @@ import Link from "next/link";
 import {
   Facebook,
   Instagram,
-  Twitter,
   Youtube,
   Linkedin,
   Mail,
@@ -13,7 +12,7 @@ import {
 
 const quickLinks = [
   { name: "Home", href: "/" },
-  { name: "Courses", href: "/courses" },
+  { name: "Courses", href: "/course" },
   { name: "About Us", href: "/about" },
   { name: "Contact", href: "/contact" },
 ];
