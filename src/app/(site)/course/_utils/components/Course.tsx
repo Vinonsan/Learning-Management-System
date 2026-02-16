@@ -5,47 +5,50 @@ import SectionHeading from '@/src/components/layouts/SectionHeading'
 import { Clock } from 'lucide-react'
 
 const courses = [
-  {
-    title: 'React.js – Modern Frontend Development',
+    {
+    title: "A/L ICT – Information & Communication Technology",
     description:
-      'This course focuses on building modern, scalable user interfaces using React.js. Learners will understand components, hooks, state management, and best practices.',
-    duration: '12',
-    monthlyFee: '4000',
-    image: 'https://images.unsplash.com/photo-1555066931-4365d14bab8c',
+      "This course is designed according to the A/L ICT syllabus, covering fundamental concepts such as computer hardware, software, networking, data representation, databases, and basic programming. Students will develop strong conceptual knowledge as well as problem-solving skills required for examinations, while also gaining practical exposure to real-world ICT applications.",
+    duration: "4",
+    monthlyFee: "1500",
+    image: "https://images.unsplash.com/photo-1559028012-481c04fa702d",
   },
   {
-    title: 'Next.js – Full-Stack React Framework',
+    title: "React.js – Modern Frontend Development",
     description:
-      'Learn server-side rendering, static generation, routing, API routes, SEO optimization, and production deployment using Next.js.',
-    duration: '10',
-    monthlyFee: '4500',
-    image: 'https://images.unsplash.com/photo-1498050108023-c5249f4df085',
+      "This course focuses on building modern, scalable user interfaces using React.js. Learners will understand core concepts such as components, JSX, props, state management, hooks, and component lifecycle. By the end of the course, students will be able to build reusable UI components, manage application state efficiently, and structure real-world frontend applications following best practices used in the industry.",
+    duration: "4",
+    monthlyFee: "4000",
+    image: "https://images.unsplash.com/photo-1555066931-4365d14bab8c",
   },
+
   {
-    title: '.NET – Backend Development with C#',
+    title: "Next.js – Modern Full-Stack web Development",
     description:
-      'Build secure and scalable backend systems using .NET and C#. Learn REST APIs, authentication, and database integration.',
-    duration: '14',
-    monthlyFee: '5000',
-    image: 'https://images.unsplash.com/photo-1555949963-aa79dcee981c',
+      "This course teaches how to build production-ready web applications using Next.js. Students will learn server-side rendering (SSR), static site generation (SSG), API routes, routing, layouts, and performance optimization. The course also covers SEO best practices and deployment strategies, enabling learners to create fast, scalable, and SEO-friendly applications suitable for enterprise use.",
+    duration: "4",
+    monthlyFee: "4000",
+    image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085",
   },
+
   {
-    title: 'Node.js – Scalable Server-Side Development',
+    title: ".NET – Modern Backend Development with C#",
     description:
-      'Learn Node.js, Express, async programming, REST APIs, and scalable backend architectures.',
-    duration: '10',
-    monthlyFee: '4500',
-    image: 'https://images.unsplash.com/photo-1519389950473-47ba0277781c',
+      "This course provides a solid foundation in backend development using the .NET platform and C#. Learners will gain hands-on experience building RESTful APIs, working with databases, handling authentication, and implementing business logic. Emphasis is placed on clean architecture, performance, and security, preparing students for enterprise-level backend development roles.",
+    duration: "4",
+    monthlyFee: "4000",
+    image: "https://images.unsplash.com/photo-1555949963-aa79dcee981c",
   },
+
   {
-    title: 'A/L ICT – Information & Communication Technology',
+    title: "Node.js – Scalable Server-Side Development",
     description:
-      'Covers the full A/L ICT syllabus including hardware, software, networking, databases, and programming concepts.',
-    duration: '6',
-    monthlyFee: '3000',
-    image: 'https://images.unsplash.com/photo-1559028012-481c04fa702d',
+      "This course covers server-side development using Node.js and JavaScript. Students will learn how Node.js handles asynchronous operations, build REST APIs using Express.js, integrate databases, and manage authentication and authorization. The course emphasizes writing scalable, non-blocking applications suitable for modern web and mobile backends.",
+    duration: "4",
+    monthlyFee: "4000",
+    image: "https://images.unsplash.com/photo-1519389950473-47ba0277781c",
   },
-]
+];
 
 const Course = () => {
   return (

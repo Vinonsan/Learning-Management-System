@@ -1,6 +1,4 @@
 {
-  "/(site)/about/page": "app/(site)/about/page.js",
   "/(site)/contact/page": "app/(site)/contact/page.js",
-  "/(site)/course/page": "app/(site)/course/page.js",
-  "/(site)/page": "app/(site)/page.js"
+  "/api/contact/route": "app/api/contact/route.js"
 }
