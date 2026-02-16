@@ -82,7 +82,7 @@ export default function ContactInformation() {
       <div className="mt-16 text-center">
         <Button
         variant="rounded"
-         href="https://wa.me/94771234567"
+         href="https://wa.me/94758311995"
           target="_blank"
           rel="noopener noreferrer"
         >

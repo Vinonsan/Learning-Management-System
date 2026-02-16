@@ -42,7 +42,7 @@
         256,
         384
       ],
-      "path": "/_next/image",
+      "path": "/_next/image/",
       "loader": "default",
       "loaderFile": "",
       "domains": [
@@ -79,7 +79,7 @@
     },
     "basePath": "",
     "sassOptions": {},
-    "trailingSlash": false,
+    "trailingSlash": true,
     "i18n": null,
     "productionBrowserSourceMaps": false,
     "excludeDefaultMomentLocales": true,
@@ -102,7 +102,7 @@
         "transform": "lodash/{{member}}"
       }
     },
-    "outputFileTracingRoot": "C:\\Users\\admin\\Desktop\\Learning-Management-System",
+    "outputFileTracingRoot": "C:\\Users\\admin\\Desktop\\Master brain\\Learning-Management-System",
     "cacheComponents": false,
     "cacheLife": {
       "default": {
@@ -160,7 +160,7 @@
       "proxyPrefetch": "flexible",
       "optimisticClientCache": true,
       "manualClientBasePath": false,
-      "cpus": 3,
+      "cpus": 7,
       "memoryBasedWorkersCount": false,
       "imgOptConcurrency": null,
       "imgOptTimeoutInSeconds": 7,
@@ -292,11 +292,11 @@
     "bundlePagesRouterDependencies": false,
     "configFileName": "next.config.ts",
     "turbopack": {
-      "root": "C:\\Users\\admin\\Desktop\\Learning-Management-System"
+      "root": "C:\\Users\\admin\\Desktop\\Master brain\\Learning-Management-System"
     },
     "distDirRoot": ".next"
   },
-  "appDir": "C:\\Users\\admin\\Desktop\\Learning-Management-System",
+  "appDir": "C:\\Users\\admin\\Desktop\\Master brain\\Learning-Management-System",
   "relativeAppDir": "",
   "files": [
     ".next\\routes-manifest.json",

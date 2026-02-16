@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { Send } from "lucide-react";
+import { toast } from "react-hot-toast";
 
 import SectionHeading from "@/src/components/layouts/SectionHeading";
 import Button from "@/src/components/base/Button";
@@ -21,14 +22,40 @@ const ContactForm = () => {
     message: "",
   });
 
-  function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
+  async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
     setLoading(true);
 
-    setTimeout(() => {
+    try {
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(form),
+      });
+
+      const result = await response.json();
+
+      if (!response.ok) {
+        throw new Error(result.error || "Something went wrong");
+      }
+
+      toast.success("Message sent successfully!");
+
+      setForm({
+        fullName: "",
+        email: "",
+        phone: "",
+        course: "",
+        message: "",
+      });
+    } catch (error) {
+      toast.error("Failed to send message. Please try again.");
+      console.error(error);
+    } finally {
       setLoading(false);
-      alert("Message sent successfully!");
-    }, 1500);
+    }
   }
 
   return (
@@ -110,6 +137,6 @@ const ContactForm = () => {
       </div>
     </section>
   );
-}
+};
 
-export default ContactForm
+export default ContactForm;
