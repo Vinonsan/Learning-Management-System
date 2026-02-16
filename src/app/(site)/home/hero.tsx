@@ -3,13 +3,14 @@ import { useEffect, useState } from "react";
 import Badge from "@/src/components/base/Badge"
 import Button from "@/src/components/base/Button"
 import {
-    ArrowRight,
     Sparkles,
     Award,
     Terminal,
     Zap,
 } from "lucide-react"
+
 import Image from "next/image"
+import { useRouter } from "next/navigation";
 
 const Hero = () => {
     const features = [
@@ -45,6 +46,7 @@ const Hero = () => {
         return () => clearInterval(interval);
     }, []);
     
+    const router = useRouter();
     return (
         <section className="w-full flex items-center">
             <div className="grid grid-cols-1 lg:grid-cols-2 w-full items-start justify-start">
@@ -73,16 +75,14 @@ const Hero = () => {
                             size="lg"
                             className="group rounded-full w-full md:w-auto px-8 py-4 text-base font-semibold shadow-xl transition-all duration-300 hover:scale-105 hover:shadow-2xl"
                         >
-                            <span className="flex items-center gap-2">
-                                Enter Dashboard
-                                <ArrowRight className="h-5 w-5 transition-transform group-hover:translate-x-1" />
-                            </span>
+                          Enter Dashboard
                         </Button>
 
                         <Button
                             variant="outline"
                             size="lg"
                             className="rounded-full w-full md:w-auto border-2 border-dark px-8 py-4 text-base font-semibold transition-all duration-300 hover:bg-black hover:text-white"
+                            onClick={() => router.push("/course-material")}
                         >
                             Explore Resources
                         </Button>

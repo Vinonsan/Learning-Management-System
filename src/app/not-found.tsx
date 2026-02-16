@@ -1,11 +1,16 @@
 "use client";
+
 import Link from "next/link";
-import { Home, AlertTriangle } from "lucide-react";
+import { useRouter } from "next/navigation";
+import { Home, AlertTriangle, ArrowLeft } from "lucide-react";
+import Button from "@/src/components/base/Button";
 
 const NotFound = () => {
+  const router = useRouter();
+
   return (
     <div className="relative flex min-h-screen items-center justify-center overflow-hidden bg-linear-to-br from-black via-red-950 to-black px-6">
-      
+
       <div className="absolute -top-40 -left-40 h-120 w-120 rounded-full bg-red-700/30 blur-[120px]" />
       <div className="absolute -bottom-40 -right-40 h-120 w-120 rounded-full bg-red-700/30 blur-[120px]" />
 
@@ -27,17 +32,29 @@ const NotFound = () => {
           The page you’re trying to access doesn’t exist or was moved.
         </p>
 
-        <Link
-          href="/"
-          className="group mt-8 inline-flex items-center justify-center gap-2 rounded-xl bg-red-600 px-6 py-3 text-sm font-semibold text-white transition-all duration-300 hover:bg-red-700 hover:shadow-[0_0_20px_rgba(220,38,38,0.6)] hover:scale-105"
-        >
-          <Home size={18} />
-          <span>Back to Home</span>
-         
-        </Link>
+        <div className="mt-8 flex flex-col gap-3">
+          <Button
+            variant="primary"
+            className="rounded-xl"
+          >
+            <Link href="/" className="flex items-center gap-2">
+              <Home size={18} />
+              Back to Home
+            </Link>
+          </Button>
+
+          <Button
+            variant="outline"
+            className="rounded-xl text-white border-white/20 hover:bg-white/10"
+            onClick={() => router.back()}
+          >
+            <ArrowLeft size={18} />
+            Go Back
+          </Button>
+        </div>
       </div>
     </div>
   );
-}
+};
 
 export default NotFound;
